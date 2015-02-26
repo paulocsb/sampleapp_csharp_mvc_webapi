@@ -1,16 +1,16 @@
-﻿myApp.controller('formularioCtrl', ['$scope', '$http', '$q', function($scope, $http, $q) {
+﻿myApp.controller('subcategoriaCtrl', ['$scope', '$http', '$q', function($scope, $http, $q) {
   
 	init();
 
 	function init() {
-		 getFormularios();
+		 getSubCategorias();
 	}
 
-	function getFormularios() {
+	function getSubCategorias() {
 		var deferred = $q.defer(); 
         
-        $http.get('/api/Formulario').success(function (results) { 
-            $scope.formularios = results; 
+        $http.get('/api/SubCategoria').success(function (results) { 
+            $scope.subcategorias = results; 
             deferred.resolve(results); 
         }).error(function (data, status, headers, config) { 
             deferred.reject('ocorreu um erro na tentativa de obter os dados.');
@@ -20,21 +20,21 @@
 	}
 
 	$scope.add = function () {          
-        $http.post('/api/Formulario/', this.addFormulario).success(function (data) {  
+        $http.post('/api/SubCategoria/', this.addSubCategoria).success(function (data) {  
             alert("Adicionado com Successo!!");  
-            $scope.formularios.push(data);  
+            $scope.subcategorias.push(data);  
         }).error(function (data) {  
             $scope.error = "ocorreu um erro ao tentar salvar os dados! " + data;   
         });  
     };
 
     $scope.delete = function () {          
-        var formularioId = this.formulario.Id;  
-        $http.delete('/api/Formulario/' + formularioId).success(function (data) {  
+        var subcategoriaId = this.subcategoria.Id;  
+        $http.delete('/api/SubCategoria/' + subcategoriaId).success(function (data) {  
             alert("Deletado com Successo!!");  
-            $.each($scope.formularios, function (i) {  
-                if ($scope.formularios[i].Id === formularioId) {  
-                    $scope.formularios.splice(i, 1);  
+            $.each($scope.subcategorias, function (i) {  
+                if ($scope.subcategorias[i].Id === subcategoriaId) {  
+                    $scope.subcategorias.splice(i, 1);  
                     return false;  
                 }  
             });   

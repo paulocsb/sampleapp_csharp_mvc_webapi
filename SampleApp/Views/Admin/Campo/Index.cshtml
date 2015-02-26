@@ -1,0 +1,57 @@
+﻿<h2>Listagem Campos</h2>
+<hr />
+<div ng-controller="campoCtrl">
+	<fieldset>
+		<legend>Nova Sub-Categoria</legend>
+		<form name="addCampo" class="form-inline">
+			<div class="row">
+				<div class="col-xs-2">
+					<label>Ordem</label>
+					<input type="text" ng-model="campo.Ordem" class="form-control" required="required" />
+				</div>
+				<div class="col-xs-2">
+					<label>Descrição</label>
+					<input type="text" ng-model="campo.Descricao" class="form-control" required="required" />
+				</div>
+				<div class="col-xs-2">
+					<label>Tipo</label>
+					<input type="text" ng-model="campo.Tipo" class="form-control" required="required" />
+				</div>
+				<div class="col-xs-2" style="padding-top: 25px;">
+					<button ng-click="add()" ng-disabled="!addCampo.$valid" class="btn btn-primary">Adicionar</button>
+				</div>
+			</div>
+		</form>
+	</fieldset>
+	<hr />
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th class="col-md-1">#</th>
+				<th>Ordem</th>
+				<th>Descrição</th>
+				<th>Tipo</th>
+				<th class="col-md-1">&nbsp;</th>
+			</tr>
+		</thead>
+		<tbody>
+		<tr ng-repeat="campo in campos">
+			<td class="col-md-1">
+				{{ campo.Id }}
+			</td>
+			<td>
+				{{ campo.Ordem }}
+			</td>
+			<td>
+				{{ campo.Descricao }}
+			</td>
+			<td>
+				{{ campo.Tipo }}
+			</td>
+			<td class="col-md-1 text-center">
+				<a href='#' ng-click="delete()">excluir</a>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+</div>

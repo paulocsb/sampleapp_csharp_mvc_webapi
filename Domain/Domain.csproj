@@ -68,6 +68,9 @@
     <Compile Include="Services\CategoriaService.cs" />
     <Compile Include="Services\SubCategoriaService.cs" />
     <Compile Include="Contracts\ISubCategoriaService.cs" />
+    <Compile Include="Entities\Campo.cs" />
+    <Compile Include="Services\CampoService.cs" />
+    <Compile Include="Contracts\ICampoService.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

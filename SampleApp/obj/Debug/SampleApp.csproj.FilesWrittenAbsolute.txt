@@ -1,4 +1,8 @@
 /Users/paulocsb/Documents/XamarinProjects/SampleApp/SampleApp/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/paulocsb/Documents/XamarinProjects/SampleApp/SampleApp/bin/SampleApp.dll.mdb
+/Users/paulocsb/Documents/XamarinProjects/SampleApp/SampleApp/bin/SampleApp.dll
+/Users/paulocsb/Documents/XamarinProjects/SampleApp/SampleApp/obj/Debug/SampleApp.dll
+/Users/paulocsb/Documents/XamarinProjects/SampleApp/SampleApp/obj/Debug/SampleApp.dll.mdb
 /Users/paulocsb/Documents/XamarinProjects/SampleApp/SampleApp/bin/Microsoft.Web.Infrastructure.dll
 /Users/paulocsb/Documents/XamarinProjects/SampleApp/SampleApp/bin/System.Web.Razor.dll
 /Users/paulocsb/Documents/XamarinProjects/SampleApp/SampleApp/bin/System.Web.Helpers.dll
@@ -19,7 +23,3 @@
 /Users/paulocsb/Documents/XamarinProjects/SampleApp/SampleApp/bin/EntityFramework.dll
 /Users/paulocsb/Documents/XamarinProjects/SampleApp/SampleApp/bin/Domain.dll
 /Users/paulocsb/Documents/XamarinProjects/SampleApp/SampleApp/bin/Domain.dll.mdb
-/Users/paulocsb/Documents/XamarinProjects/SampleApp/SampleApp/bin/SampleApp.dll.mdb
-/Users/paulocsb/Documents/XamarinProjects/SampleApp/SampleApp/bin/SampleApp.dll
-/Users/paulocsb/Documents/XamarinProjects/SampleApp/SampleApp/obj/Debug/SampleApp.dll
-/Users/paulocsb/Documents/XamarinProjects/SampleApp/SampleApp/obj/Debug/SampleApp.dll.mdb

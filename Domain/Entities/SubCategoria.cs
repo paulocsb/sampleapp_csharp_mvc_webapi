@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Collections.Generic;
 
 namespace Domain.Entities
 {
@@ -11,6 +12,7 @@ namespace Domain.Entities
 		public string Descricao { get; set; }
 		public string Slug { get; set; }
 		public virtual Categoria Categoria { get; set; }
+		public List<Campo> Campos { get; set; }
 
 		public SubCategoria() : base()
 		{

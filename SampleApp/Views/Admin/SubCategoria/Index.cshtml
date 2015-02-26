@@ -1,1 +1,53 @@
-﻿
+﻿<h2>Listagem Sub-Categorias</h2>
+<hr />
+<div ng-controller="subcategoriaCtrl">
+	<fieldset>
+		<legend>Nova Sub-Categoria</legend>
+		<form name="addSubCategoria" class="form-inline">
+			<div class="row">
+				<div class="col-xs-2">
+					<label>Descrição</label>
+					<input type="text" ng-model="subcategoria.Descricao" class="form-control" required="required" />
+				</div>
+				<div class="col-xs-2">
+					<label>Slug</label>
+					<input type="text" ng-model="subcategoria.Slug" class="form-control" required="required" />
+				</div>
+				<div class="col-xs-2" style="padding-top: 25px;">
+					<button ng-click="add()" ng-disabled="!addSubCategoria.$valid" class="btn btn-primary">Adicionar</button>
+				</div>
+			</div>
+		</form>
+	</fieldset>
+	<hr />
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th class="col-md-1">#</th>
+				<th>Descrição</th>
+				<th>Slug</th>
+				<th class="col-md-1">&nbsp;</th>
+				<th class="col-md-1">&nbsp;</th>
+			</tr>
+		</thead>
+		<tbody>
+		<tr ng-repeat="subcategoria in subcategorias">
+			<td class="col-md-1">
+				{{ subcategoria.Id }}
+			</td>
+			<td>
+				{{ subcategoria.Descricao }}
+			</td>
+			<td>
+				{{ subcategoria.Slug }}
+			</td>
+			<td class="col-md-2 text-center">
+				<a href='/campo/?cId={{ subcategoria.id }}'>+ campos</a>
+			</td>
+			<td class="col-md-1 text-center">
+				<a href='#' ng-click="delete()">excluir</a>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+</div>

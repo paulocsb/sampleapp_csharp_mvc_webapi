@@ -1,20 +1,19 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Collections.Generic;
 
 namespace Domain.Entities
 {
-	public class Categoria : Entity<Categoria>
+	public class Campo : Entity<Campo>
 	{
 		[Key]
 		[DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
 		public int Id { get; set; }
+		public decimal Ordem { get; set; }
 		public string Descricao { get; set; }
-		public string Slug { get; set; }
-		public virtual Formulario Formulario { get; set; }
-		public List<SubCategoria> SubCategorias { get; set; }
+		public string Tipo { get; set; }
+		public virtual SubCategoria SubCategoria { get; set; }
 
-		public Categoria() : base()
+		public Campo() : base()
 		{
 		}
 	}

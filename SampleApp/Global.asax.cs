@@ -9,6 +9,7 @@ namespace SampleApp
 	{
 		protected void Application_Start()
 		{
+			GlobalConfiguration.Configuration.IncludeErrorDetailPolicy = IncludeErrorDetailPolicy.Always;
 			GlobalConfiguration.Configuration.Formatters.JsonFormatter.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
 
 			AreaRegistration.RegisterAllAreas();
