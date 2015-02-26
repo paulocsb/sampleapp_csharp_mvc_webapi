@@ -1,0 +1,49 @@
+﻿<h2>Listagem de Formulários</h2>
+<hr />
+<div ng-controller="formularioCtrl">
+	<fieldset>
+		<legend>Nova Formulário</legend>
+		<strong class="error">{{ error }}</strong>
+		<form name="addFormulario" class="form-inline">
+			<div class="row">
+				<div class="col-xs-2">
+					<label>Descrição</label>
+					<input type="text" ng-model="formulario.Descricao" class="form-control" required="required" />
+				</div>
+				<div class="col-xs-2" style="padding-top: 25px;">
+					<button ng-click="add()" ng-disabled="!addFormulario.$valid" class="btn btn-primary">Adicionar</button>
+				</div>
+			</div>
+		</form>
+	</fieldset>
+	<hr />
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th class="col-md-1">#</th>
+				<th>Descrição</th>
+				<th class="col-md-1">&nbsp;</th>
+				<th class="col-md-1">&nbsp;</th>
+			</tr>
+		</thead>
+		<tbody>
+		<tr ng-repeat="formulario in formularios">
+			<td class="col-md-1">
+				{{ formulario.Id }}
+			</td>
+			<td>
+				{{ formulario.Descricao }}
+			</td>
+			<td class="col-md-1 text-center">
+				<a href='/categoria/?fId={{ formulario.id }}'>+ categoria</a>
+			</td>
+			<td class="col-md-1 text-center">
+				<a href=''>excluir</a>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+</div>
+@section scripts {
+	<script src="/scripts/formularioController.js"></script>
+}

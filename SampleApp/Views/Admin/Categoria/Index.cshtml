@@ -1,0 +1,53 @@
+﻿<h2>Listagem Categorias</h2>
+<hr />
+<div ng-controller="categoriaCtrl">
+	<fieldset>
+		<legend>Nova Categoria</legend>
+		<form name="addCategoria" class="form-inline">
+			<div class="row">
+				<div class="col-xs-2">
+					<label>Descrição</label>
+					<input type="text" ng-model="categoria.Descricao" class="form-control" required="required" />
+				</div>
+				<div class="col-xs-2">
+					<label>Slug</label>
+					<input type="text" ng-model="categoria.Slug" class="form-control" required="required" />
+				</div>
+				<div class="col-xs-2" style="padding-top: 25px;">
+					<button ng-click="add()" ng-disabled="!addCategoria.$valid" class="btn btn-primary">Adicionar</button>
+				</div>
+			</div>
+		</form>
+	</fieldset>
+	<hr />
+	<table class="table table-bordered">
+		<thead>
+			<tr>
+				<th class="col-md-1">#</th>
+				<th>Descrição</th>
+				<th>Slug</th>
+				<th class="col-md-2">&nbsp;</th>
+				<th class="col-md-1">&nbsp;</th>
+			</tr>
+		</thead>
+		<tbody>
+		<tr ng-repeat="categoria in categorias">
+			<td class="col-md-1">
+				{{ categoria.Id }}
+			</td>
+			<td>
+				{{ categoria.Descricao }}
+			</td>
+			<td>
+				{{ categoria.Slug }}
+			</td>
+			<td class="col-md-2 text-center">
+				<a href='/subcategoria/?cId={{ categoria.id }}'>+ sub-categoria</a>
+			</td>
+			<td class="col-md-1 text-center">
+				<a href=''>excluir</a>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+</div>
