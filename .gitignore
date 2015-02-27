@@ -1,2 +1,4 @@
+/Domain/bin/*
+/Domain/obj/Debug/*
 /SampleApp/bin/*
 /SampleApp/obj/Debug/*
