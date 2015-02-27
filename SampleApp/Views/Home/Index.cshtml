@@ -1,6 +1,19 @@
-﻿<nav class="navbar navbar-inverse">
-	<ul class="nav navbar-nav">
-		<li><a href="/admin">Gerenciar</a></li>
-	</ul>
-</nav>
+﻿@Html.Partial("_Navbar")
 <h2>Preenchimento de Formulários</h2>
+<br/>
+<h5>Formulários a serem preenchidos:</h5>
+<div class="panel panel-default" ng-controller="homeCtrl">
+  <div class="panel-body">
+    <ul ng-repeat="formulario in formularios">
+  		<li ng-repeat="categoria in formulario.Categorias">
+  			{{ formulario.Descricao }} 
+  			<a style="display:block;" ng-repeat="subcategoria in categoria.SubCategorias" href="/{{ categoria.Slug }}/{{ subcategoria.Slug }}">
+  				{{ categoria.Slug }}/{{ subcategoria.Slug }}
+  			</a>
+		</li>
+	</ul>
+  </div>
+</div>
+@section scripts {
+	<script src="/scripts/homeController.js"></script>
+}

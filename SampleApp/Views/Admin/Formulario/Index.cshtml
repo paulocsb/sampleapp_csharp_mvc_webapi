@@ -1,9 +1,10 @@
-﻿<h2>Listagem de Formulários</h2>
+﻿@Html.Partial("_NavbarAdmin")
+<h2>Listagem de Formulários</h2>
 <hr />
 <div ng-controller="formularioCtrl">
 	<fieldset>
-		<legend>Nova Formulário</legend>
-		<strong class="error">{{ error }}</strong>
+		<legend>Novo Formulário</legend>
+		@Html.Partial("_AlertMessage")
 		<form name="addFormulario" class="form-inline">
 			<div class="row">
 				<div class="col-xs-2">

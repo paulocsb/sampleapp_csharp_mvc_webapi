@@ -9,7 +9,7 @@
 	function getFormularios() {
 		var deferred = $q.defer(); 
         
-        $http.get('/api/Formulario').success(function (results) { 
+        $http.get('/api/Formulario').success(function(results) { 
             $scope.formularios = results; 
             deferred.resolve(results); 
         }).error(function (data, status, headers, config) { 
@@ -24,7 +24,7 @@
             alert("Adicionado com Successo!!");  
             $scope.formularios.push(data);  
         }).error(function (data) {  
-            $scope.error = "ocorreu um erro ao tentar salvar os dados! " + data;   
+            $scope.error = "ocorreu um erro ao tentar salvar os dados! ";   
         });  
     };
 
@@ -39,7 +39,7 @@
                 }  
             });   
         }).error(function (data) {  
-            $scope.error = "ocorreu um erro ao tentar salvar os dados! " + data;    
+            $scope.error = "ocorreu um erro ao tentar salvar os dados! ";    
         });  
     };
 

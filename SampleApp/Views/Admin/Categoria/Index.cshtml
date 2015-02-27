@@ -1,8 +1,10 @@
-﻿<h2>Listagem Categorias</h2>
+﻿@Html.Partial("_NavbarAdmin")
+<h2>Listagem Categorias</h2>
 <hr />
 <div ng-controller="categoriaCtrl">
 	<fieldset>
 		<legend>Nova Categoria</legend>
+		@Html.Partial("_AlertMessage")
 		<form name="addCategoria" class="form-inline">
 			<div class="row">
 				<div class="col-xs-2">
@@ -51,3 +53,6 @@
 		</tbody>
 	</table>
 </div>
+@section scripts {
+	<script src="/scripts/categoriaController.js"></script>
+}

@@ -24,5 +24,11 @@ namespace SampleApp.Controllers
 			var categoriaId = Convert.ToInt32(Request["cId"]);
 			return View("SubCategoria/Index", categoriaId);
 		}
+
+		public ActionResult Campo()
+		{
+			var subcategoriaId = Convert.ToInt32(Request["cId"]);
+			return View("Campo/Index", subcategoriaId);
+		}
     }
 }

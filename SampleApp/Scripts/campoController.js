@@ -24,7 +24,7 @@
             alert("Adicionado com Successo!!");  
             $scope.campos.push(data);  
         }).error(function (data) {  
-            $scope.error = "ocorreu um erro ao tentar salvar os dados! " + data;   
+            $scope.error = "ocorreu um erro ao tentar salvar os dados! ";   
         });  
     };
 
@@ -39,7 +39,7 @@
                 }  
             });   
         }).error(function (data) {  
-            $scope.error = "ocorreu um erro ao tentar salvar os dados! " + data;    
+            $scope.error = "ocorreu um erro ao tentar salvar os dados! ";    
         });  
     };
 

@@ -1,8 +1,10 @@
-﻿<h2>Listagem Campos</h2>
+﻿@Html.Partial("_NavbarAdmin")
+<h2>Listagem Campos</h2>
 <hr />
 <div ng-controller="campoCtrl">
 	<fieldset>
-		<legend>Nova Sub-Categoria</legend>
+		<legend>Novo Campo</legend>
+		@Html.Partial("_AlertMessage")
 		<form name="addCampo" class="form-inline">
 			<div class="row">
 				<div class="col-xs-2">
@@ -55,3 +57,6 @@
 		</tbody>
 	</table>
 </div>
+@section scripts {
+	<script src="/scripts/campoController.js"></script>
+}
