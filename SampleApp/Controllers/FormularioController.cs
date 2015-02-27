@@ -7,7 +7,6 @@ using Domain.Data;
 using System.Net.Http;
 using System.Web.Http; 
 
-
 namespace SampleApp.Controllers
 {
     public class FormularioController : ApiController
