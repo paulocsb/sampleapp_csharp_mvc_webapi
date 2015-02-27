@@ -1,9 +1,0 @@
-/Users/paulocsb/Documents/XamarinProjects/SampleApp/Domain/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
-/Users/paulocsb/Documents/XamarinProjects/SampleApp/Domain/bin/Debug/Domain.dll.mdb
-/Users/paulocsb/Documents/XamarinProjects/SampleApp/Domain/bin/Debug/Domain.dll
-/Users/paulocsb/Documents/XamarinProjects/SampleApp/Domain/obj/Debug/Domain.dll
-/Users/paulocsb/Documents/XamarinProjects/SampleApp/Domain/obj/Debug/Domain.dll.mdb
-/Users/paulocsb/Documents/XamarinProjects/SampleApp/Domain/bin/Debug/EntityFramework.dll
-/Users/paulocsb/Documents/XamarinProjects/SampleApp/Domain/bin/Debug/EntityFramework.SqlServer.dll
-/Users/paulocsb/Documents/XamarinProjects/SampleApp/Domain/bin/Debug/System.Web.Optimization.dll
-/Users/paulocsb/Documents/XamarinProjects/SampleApp/Domain/bin/Debug/Microsoft.Web.Infrastructure.dll

@@ -1,17 +1,18 @@
 ﻿<Properties StartupItem="SampleApp/SampleApp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="SampleApp/Controllers/HomeController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SampleApp/Controllers/AdminController.cs">
     <Files>
+      <File FileName="SampleApp/Controllers/AdminController.cs" Line="30" Column="30" />
       <File FileName="SampleApp/Controllers/HomeController.cs" Line="1" Column="1" />
-      <File FileName="SampleApp/Web.config" Line="1" Column="1" />
-      <File FileName="SampleApp/Views/Web.config" Line="1" Column="1" />
-      <File FileName="SampleApp/Views/Shared/_Layout.cshtml" Line="1" Column="1" />
+      <File FileName="SampleApp/Views/Home/Index.cshtml" Line="1" Column="1" />
+      <File FileName="SampleApp/Views/Home/Formulario.cshtml" Line="1" Column="1" />
+      <File FileName="SampleApp/Controllers/FormularioController.cs" Line="1" Column="1" />
+      <File FileName="SampleApp/Scripts/controllers/homeController.js" Line="1" Column="1" />
+      <File FileName="SampleApp/Scripts/controllers/formularioController.js" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/paulocsb/Documents/XamarinProjects/SampleApp/SampleApp/Controllers/HomeController.cs" line="23" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
